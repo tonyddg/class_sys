@@ -18,3 +18,5 @@
 3. 修改pass_inf.php 为对应的信息
 4. 将文件部署到网页文件夹
 5. 启动apache服务，确保http，mysql相应端口开放
+## 更多信息
+https://github.com/tonyddg/class_sys

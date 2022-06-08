@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>选课系统</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- 新 Bootstrap5 核心 CSS 文件 -->
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+        <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+        <script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <!-- 向服务端发送输入的查询命令 并处理返回的结果 -->
+        <script src="./sql_js/sqlcom.js"></script>
+        <!-- 基本信息 -->
+        <script src="./sql_js/baseinf.js"></script>
+
+        <script src="./js/changepw.js"></script>
+    </head>
+
+    <body>
+        <div class="container mt-3">
+            <h2>修改密码</h2>
+            <hr>
+            <div class="row">
+                <div class="col-2">
+                    <div id="sideNav"></div>
+                </div>
+                <div class="col">
+                    <form class="cmdform" name="pwForm">
+                        <div class="mt-3 mb-3">
+                            <label class="form-label">输入新密码
+                                <input name="newPw" class="form-control" type="password">
+                            </label>
+                        </div>
+                        <div class="mt-3 mb-3">
+                            <label class="form-label">再次输入
+                                <input name="newPwConfirm" class="form-control" type="password">
+                            </label>
+                        </div>
+                        <input id="submitcmd" class="btn btn-primary" type="button" value="修改">
+                    </form>
+                    <hr>
+                    <div class="restable">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
